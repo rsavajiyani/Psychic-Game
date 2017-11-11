@@ -30,6 +30,7 @@ var guesses = 9;
 var guessesSoFar = [];
 var psychicLetter;
 
+
 var newLetter = function() {
     psychicLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
 };

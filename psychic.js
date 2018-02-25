@@ -59,13 +59,13 @@ document.onkeyup = function(event) {
     guessesLeft();
     if (left > 0) {
         if (userGuess == psychicLetter) {
+        	wins++;
         	document.getElementById("wins").innerHTML = "Wins:" + wins;
-            wins++;
             newGame();
         }
     } else if (left == 0) {
+    	losses++;
     	document.getElementById("losses").innerHTML = "Losses:" + losses;
-        losses++;
         newGame();
     }
 };
